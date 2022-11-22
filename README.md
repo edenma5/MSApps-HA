@@ -1,6 +1,7 @@
 # MSApps-HA
 
 To run client side - npm run dev
+
 To run server side - node app.js
 
 המטלה הייתה מאתגרת ומספקת מאוד!
