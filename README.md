@@ -1,17 +1,18 @@
 # MSApps-HA
 
+Home Assignment of the MSapps company
+
+Assignment requirements are attached.
+
+Full-stack system
+
+Server side: NodeJS
+
+Client side: ReactJS + Redux
+
 To run client side - npm run dev
 
 To run server side - node app.js
 
 live web: https://ms-apps-ha.vercel.app/
 
-המטלה הייתה מאתגרת ומספקת מאוד!
-
-אני באופן אישי מאוד מרוצה מהתוצאה.
-
-אציין כי ראיתי לנכון להגדיל את מספר האובייקטים המתקבל בכל קריאה לשרת מ-20 ל-36 וזאת כדי שהתמונות יתחלקו באופן שווה ומלא בכל דף. 
-
-היו סעיפים מאתגרים יותר ומאתגרים פחות ולדעתי צלחתי בהתמודדות איתם.
-
-מקווה שתתרשמו מעבודתי ושעניתי על רוב הציפיות 😊
