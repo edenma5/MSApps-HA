@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-const SERVER_URL = 'http://localhost:3500'
+const SERVER_URL = 'https://ms-apps-server.herokuapp.com/'
 
 export const getPictures = (category) => async (dispatch) => {
     try {
