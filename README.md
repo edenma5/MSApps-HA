@@ -1,6 +1,6 @@
 # MSApps-HA
 
-Home Assignment of the MSapps company
+Home Assignment of MSapps company
 
 Assignment requirements are attached.
 
