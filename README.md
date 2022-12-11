@@ -6,6 +6,8 @@ Assignment requirements are attached.
 
 Full-stack system
 
+works with fetch API from Pixabay
+
 Server side: NodeJS
 
 Client side: ReactJS + Redux
