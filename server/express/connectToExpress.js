@@ -1,15 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 const server = express();
-require('dotenv').config();
+
 server.use(express.json())
 server.use(cors())
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-    port = 3500;
-}
-
+let port = 3500;
 
 const getPictures = require('./getPictures');
 
