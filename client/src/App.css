@@ -1,0 +1,174 @@
+:root {
+    --purple: rgb(73, 73, 154);
+    --light_grey: #ccd1d3;
+    --background: rgb(237, 241, 245);
+    --box_shadow_color: rgb(190, 190, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: var(--background);
+}
+
+.headerContainer {
+    position: relative;
+    height: 50px;
+}
+
+.headerContainer .typeBtn {
+    left: 0;
+    right: 0;
+
+    margin: 20px auto;
+    width: 150px;
+    background-color: whitesmoke;
+}
+
+.imgContainer {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 750px;
+    height: max-content;
+    margin: 100px auto 0;
+    padding: 4rem 1.5rem 1.5rem;
+
+    user-select: none;
+    box-shadow: 0 0 25px var(--light_grey);
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+
+.btn {
+    position: absolute;
+    padding: .3rem 1rem;
+    font-size: 1em;
+
+    border-radius: 15px;
+    box-shadow: 0 0 5px var(--box_shadow_color);
+    background-color: rgb(237, 241, 245);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px var(--box_shadow_color);
+    background-color: var(--purple);
+    color: azure;
+}
+
+.imgContainer .prevBtn {
+    left: 2rem;
+    top: 1.2rem;
+}
+
+.imgContainer .nextBtn {
+    right: 2rem;
+    top: 1.2rem;
+}
+
+.imgContainer .pageNumber {
+    position: absolute;
+    top: 20px;
+
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+}
+
+.imgContainer div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.imgContainer div img {
+    width: 230px;
+    height: 150px;
+
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popupWindow {
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    translate: -50% -50%;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    width: max-content;
+    height: 250px;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 25px var(--light_grey);
+    backdrop-filter: blur(5px);
+}
+
+.popupWindow .close {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.popupWindow .close:hover {
+    color: red;
+}
+
+.popupWindow .typesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-y: scroll;
+}
+
+.popupWindow h4 {
+    font-size: 1.5em;
+    margin: 1rem;
+    color: var(--purple);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.popupWindow p {
+    font-family: sans-serif;
+    padding: .5rem 0;
+    font-weight: 500;
+    font-size: .9em;
+
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.popupWindow p:hover {
+    text-shadow: 0 0 30px var(--purple);
+}
